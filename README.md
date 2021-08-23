@@ -1,5 +1,3 @@
-# Session-management-in-Express
-
 ## What are sessions?
 * **A session is used to temporarily store the information on the server to be used across multiple pages of the website**. It is the total time used for an activity. The user session starts when he logs-in to a particular network application and ends when the user logs out from the application or shutdowns the system.
 * When we work on an application over the internet, the webserver doesn't know the user because the HTTP protocol does not maintain the state. The information provided by the user on one page of the application (Let's say Home) will not be transferred to another page. To remove this limitation, sessions are used. Session gets started whenever a visitor first enters a website.
@@ -28,7 +26,8 @@ The Session and cookies are used by different websites for storing user's data a
 This can be solved by using external Session Store. We have to store every session in the store so that each one will belong to only a single user. One popular session store is built using the Redis.
 
 #### Session Options
-* **Name**: It defines the name of the cookie.
+> express-session accepts these properties in the options object.
+<!-- * **Name**: It defines the name of the cookie.
 * **Value**: It defines the value of the cookie.
 * **secure** - Ensures the browser only sends the cookie over HTTPS.
 * **httpOnly** - Ensures the cookie is sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.
@@ -36,7 +35,7 @@ This can be solved by using external Session Store. We have to store every sessi
 * **path** - indicates the path of the cookie; use it to compare against the request path. If this and domain match, then send the cookie in the request.
 * **expires** - use to set expiration date for persistent cookies.
 
-
+ -->
 
 ## **Import all the Node.js libraries that we explained earlier**
 ExpressJS - Sessions Exampele
@@ -67,3 +66,4 @@ app.listen(3000);
 
 > If you revisit the page, the page counter will increase. The page in the following screenshot was refreshed 42 times.
 ![](https://i.imgur.com/ujuHprC.jpg)
+
