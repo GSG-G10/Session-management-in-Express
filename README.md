@@ -7,7 +7,7 @@
 * The user is identified with the help of **sessionID**, which is a unique number saved inside the server. It is saved as a cookie, **form field, or URL.**
 
 
-## Key Differences between Session and Cookies
+## Differences between Session and Cookies
 * A cookie is a bit of data stored by the browser and sent to the server with every request.
 * A session is a collection of data stored on the server and associated with a given user (usually via a cookie containing an id code)
 * A session can store as much data as a user want, whereas Cookies have a limited size of 4KB.
