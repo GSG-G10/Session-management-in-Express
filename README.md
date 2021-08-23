@@ -37,7 +37,7 @@ This can be solved by using external Session Store. We have to store every sessi
 
  -->
 
-## **Import all the Node.js libraries that we explained earlier**
+
 ExpressJS - Sessions Exampele
 ```
 var express = require('express');
